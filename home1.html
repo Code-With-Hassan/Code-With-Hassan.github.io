@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style_home.css">
+</head>
+<body>
+    <div class="top-header bg-dark text-light">
+        <div class="container">
+            <div class="row p-2">
+                <div class="col-md-8">
+                    <div id="all_news">
+                        <ul class="news-ul">
+                            <li><a href="#">Macbook Air - 8GB/256GB</a></li>
+                            <li><a href="#">Macbook Pro - 4GB/256GB</a></li>
+                            <li><a href="#">Dell Aspire - 6GB/500GB</a></li>
+                            <li><a href="#">Acer Tilty - 16GB/1TB</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 text-right">
+                    <a href="#" class="top-header text-light-gray social-icon"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" class="top-header text-light-gray social-icon"><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
+                    <a href="#" class="top-header text-light-gray social-icon pr-4"><i class="fa fa-twitter" aria-hidden="true"></i></a>|
+                    <a href="#" class="top-header login-register text-light-gray px-3" > <i class="fa fa-user-o" aria-hidden="true"></i> Login or Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search-header bg-light">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8 p-4">
+                    <form method="post">
+                        <div class="input-group ">
+                            <input type="text" class="form-control search-bar" placeholder="Type your text here..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <button class="btn btn-primary btn-search-round" type="button">Search</button>
+                            </div>
+                            
+                          </div>
+                        <!-- <input type="text" name="search" class="form-control"> -->
+                    </form>
+                </div>
+                <button type="button" class="close" aria-label="Close" onclick="closesearch()">
+                    <span aria-hidden="true" >&times;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="overlay">
+            <nav class="navbar navbar-expand-lg fixedElement py-3 justify-content-center d-flex">
+            
+                <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold">My Shop</a>
+                    <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+                    
+                    <div id="navbarSupportedContent" class="collapse navbar-collapse w-100">
+                        <ul class="navbar-nav mr-auto ">
+                            <li class="nav-item active"><a href="#" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">About</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Gallery</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Portfolio</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
+                            
+                        </ul>
+                        <ul class="navbar-nav ml-auto ">
+                            <li class="nav-item">
+                                <a href="javascript::void(0)" class="nav-link font-weight-bold" onclick="opensearch()">
+                                    <i class="fa fa-search" aria-hidden="true" style="font-size: 24px;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link text-uppercase font-weight-bold">
+                                    <i class="fa" style="font-size:24px">&#xf07a;</i>
+                                    <span class='badge badge-warning' id='lblCartCount'> 5 </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- <form class="">
+                        <label for="search">Search</label>
+                        <input id="search" type="search" autocomplete="disabled" required>
+                        <span class="caret"></span>
+                    </form> -->
+    
+                </div>
+            </nav>
+            <div class="container header-container h-75">
+                <div class="row h-100 justify-content-center">
+                    <div class="col-md-12 text-center vertically-center pt-5">
+                        <span class="text-light text-uppercase" style="font-size: 1.5em;">
+                            We are here to <span class="big">Recommending Products</span><br /> according to user's<br/> <span class="big">Behaviour</span>
+                        </span>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-block btn-yellow py-2">Recommend products</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="container">
+        <div class="row vertically-center">
+            <div class="floating-box">
+                <div class="row features d-flex">
+                    <div class="feature vertically-center">
+                        <div class="feature-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="feature-details w-50 text-center pt-2">
+                            <h6 class="feature-title">Heading 1</h3>
+                        </div>
+                    </div>
+                    <div class="feature vertically-center">
+                        <div class="feature-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="feature-details w-50 text-center pt-2">
+                            <h6 class="feature-title">Heading 1</h3>
+                        </div>
+                    </div>
+                    <div class="feature vertically-center">
+                        <div class="feature-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="feature-details w-50 text-center pt-2">
+                            <h6 class="feature-title">Heading 1</h3>
+                        </div>
+                    </div>
+                    <div class="feature vertically-center">
+                        <div class="feature-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="feature-details w-50 text-center pt-2">
+                            <h6 class="feature-title">Heading 1</h3>
+                        </div>
+                    </div>
+                    <div class="feature vertically-center">
+                        <div class="feature-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="feature-details w-50 text-center pt-2">
+                            <h6 class="feature-title">Heading 1</h3>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div class="container" style="padding-top: 5em;">
+        <div class="row">
+            <div class="col-md-12 box">
+                <div class="Box-container">
+                    <div class="box-title">
+                        <h3 class="text-center">How we work?</h3>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-md-6">
+                            <div class="description-side text-justify">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Fuga incidunt rem, architecto error ea, beatae est ducimus 
+                                nulla quod ad facilis repellendus aperiam delectus magnam 
+                                laudantium perferendis in ipsum! Dolorem?
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Fuga incidunt rem, architecto error ea, beatae est ducimus 
+                                nulla quod ad facilis repellendus aperiam delectus magnam 
+                                laudantium perferendis in ipsum! Dolorem?</p>
+                                <div class="steps py-2">
+                                    <div class="row">
+                                        <div class="cell">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="/assets/img/How we works.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-12 py-5">
+            <div class="hero-heading">
+                <h2 class="text-center">Best Selling Products</h2>
+            </div>
+        </div>
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                    <!-- Carousel indicators -->
+                       
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-3 my-1">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/ipad.jpg" class="img-fluid" alt="">									
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Apple iPad</h4>									
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <p class="item-price"><strike>$400.00</strike> <b>$369.00</b></p>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3 my-1">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/headphone.jpg" class="img-fluid" alt="Headphone">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Sony Headphone</h4>									
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <p class="item-price"><strike>$25.00</strike> <b>$23.99</b></p>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>		
+                                <div class="col-sm-12 col-md-6 col-lg-3 my-1">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/macbook-air.jpg" class="img-fluid" alt="Macbook">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Macbook Air</h4>									
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <p class="item-price"><strike>$899.00</strike> <b>$649.00</b></p>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>								
+                                <div class="col-sm-12 col-md-6 col-lg-3 my-1">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/nikon.jpg" class="img-fluid" alt="Nikon">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Nikon DSLR</h4>									
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <p class="item-price"><strike>$315.00</strike> <b>$250.00</b></p>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item carousel-item">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-3 my-1">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/play-station.jpg" class="img-fluid" alt="Play Station">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Sony Play Station</h4>
+                                            <p class="item-price"><strike>$289.00</strike> <span>$269.00</span></p>
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3 my-1">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/macbook-pro.jpg" class="img-fluid" alt="Macbook">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Macbook Pro</h4>
+                                            <p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3 my-1">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/speaker.jpg" class="img-fluid" alt="Speaker">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Bose Speaker</h4>
+                                            <p class="item-price"><strike>$109.00</strike> <span>$99.00</span></p>
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3 my-1">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/galaxy.jpg" class="img-fluid" alt="Galaxy">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Samsung Galaxy S8</h4>
+                                            <p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>						
+                            </div>
+                        </div>
+                        <div class="item carousel-item">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-3 my-1">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/play-station.jpg" class="img-fluid" alt="Play Station">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Sony Play Station</h4>
+                                            <p class="item-price"><strike>$289.00</strike> <span>$269.00</span></p>
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3 my-1">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/macbook-pro.jpg" class="img-fluid" alt="Macbook">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Macbook Pro</h4>
+                                            <p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3 my-1">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/speaker.jpg" class="img-fluid" alt="Speaker">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Bose Speaker</h4>
+                                            <p class="item-price"><strike>$109.00</strike> <span>$99.00</span></p>
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3 my-1">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/galaxy.jpg" class="img-fluid" alt="Galaxy">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Samsung Galaxy S8</h4>
+                                            <p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>						
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toogle-background py-5 bg-light">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col">
+                    <div class="numbering-counter vertically-center">
+                        <h3 class="counter-title">Total Products</h3>
+                        <span class="counter-number">50</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="numbering-counter vertically-center">
+                        <h3 class="counter-title">Products Sold</h3>
+                        <span class="counter-number">50</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="numbering-counter vertically-center">
+                        <h3 class="counter-title">Products Recommend</h3>
+                        <span class="counter-number">50</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>Company Name</h3>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">Company Name © 2018</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/js/script_home.js"></script>
+</body>
+</html>
