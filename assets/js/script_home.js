@@ -31,3 +31,9 @@ function closesearch()
 {
   $(".search-header").removeClass("search-open");
 }
+function dismiss_Preloader() {
+  // setTimeout(function () {
+    
+  // }, 3000);
+  $(".preloader").css('display','none');
+}
