@@ -39,6 +39,8 @@ header.header{
 .navbar .nav-link {
     color: #fff;
 	font-size: 0.9em;
+	font-weight: 500;
+
 }
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
@@ -75,9 +77,7 @@ header.header{
         color: #555;
     }
 }
-header.header{
-	
-}
+
 .text-small {
     font-size: 0.9rem !important;
 }
@@ -480,3 +480,54 @@ ul.news-ul li {
 	font-size:13px;
 	margin-bottom:0;
   }
+
+
+
+
+
+
+  button {
+	margin: 20px;
+	outline: none;
+  }
+  .custom-btn {
+	width: 100%;
+	padding: 10px 25px;
+	border: 2px solid #ffc000;
+	border-radius: 6px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 800;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+  }
+  .btn-16 {
+	background: #fff;
+   color: #ffc000;
+   z-index: 1;
+ }
+ .btn-16:after {
+   position: absolute;
+   content: "";
+   width: 0;
+   height: 100%;
+   top: 0;
+   left: 0;
+   direction: rtl;
+   z-index: -1;
+   background: #ffc000;
+   transition: all 0.3s ease;
+ }
+ .btn-16:hover {
+   color: #fff;
+ }
+ .btn-16:hover:after {
+   left: auto;
+   right: 0;
+   width: 100%;
+ }
+ .btn-16:active {
+   top: 2px;
+ }
