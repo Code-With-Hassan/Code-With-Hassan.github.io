@@ -19,7 +19,7 @@ header.header{
 	height: 80vh;
 }
 .big{
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Dancing Script', cursive !important;
 	color: #ffc000;
 	font-weight: 700;
 	font-size: larger;
@@ -115,7 +115,7 @@ header.header{
 }
 .counter-title{
 	font-weight: 700;
-	
+		
 }
 .counter-number{
 	font-size: 4em;
