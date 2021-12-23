@@ -44,7 +44,7 @@ function closesearch()
 function dismiss_Preloader() {
   setTimeout(() => {  
     $(".preloader").css('display','none');
-   }, 10000);
+   }, 1000);
     
   
 }
