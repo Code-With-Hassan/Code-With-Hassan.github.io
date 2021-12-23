@@ -20,7 +20,22 @@
     
 </head>
 <body onload="dismiss_Preloader()">
-    
+    <nav class="nav-container" id="navigation">
+        <header>
+            <button type="button" class="close" aria-label="Close" onclick="closeOffcanvas()">
+                <span aria-hidden="true" >&times;</span>
+            </button>
+          <h2>Navigation</h2>
+        </header>
+      
+        <ul class="nav">
+          <li><a href="#0">About</a></li>
+          <li><a href="#0">Services</a></li>
+          <li><a href="#0">Portfolio</a></li>
+          <li><a href="#0">Clients</a></li>
+          <li><a href="#0">Contact</a></li>
+        </ul>
+    </nav>
 
     <div class="preloader">
         <div id="particles-js"></div>
@@ -101,7 +116,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link text-uppercase font-weight-bold">
+                                <a href="" class="nav-link text-uppercase font-weight-bold nav-trigger" >
                                     <i class="fa" style="font-size:24px">&#xf07a;</i>
                                     <span class='badge badge-warning' id='lblCartCount'> 5 </span>
                                 </a>
@@ -133,35 +148,42 @@
         </div>
         
     </header>
-    <div class="container">
+    <div class="container container-1200">
         <div class="row vertically-center">
             <div class="floating-box">
                 <div class="row features d-flex">
-                    <div class="feature vertically-center">
-                        <div class="feature-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                        <div class="feature-details w-50 text-center pt-2">
-                            <h6 class="feature-title">Heading 1</h3>
+                    <div class="col-md-3 my-2">
+                        <div class="feature vertically-center">
+                            <div class="feature-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                            <div class="feature-details w-50 text-center pt-2">
+                                <h6 class="feature-title">Heading 1</h3>
+                            </div>
                         </div>
                     </div>
-                    <div class="feature vertically-center">
-                        <div class="feature-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                        <div class="feature-details w-50 text-center pt-2">
-                            <h6 class="feature-title">Heading 1</h3>
+                    <div class="col-md-3 my-2">
+                        <div class="feature vertically-center">
+                            <div class="feature-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                            <div class="feature-details w-50 text-center pt-2">
+                                <h6 class="feature-title">Heading 1</h3>
+                            </div>
                         </div>
                     </div>
-                    <div class="feature vertically-center">
-                        <div class="feature-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                        <div class="feature-details w-50 text-center pt-2">
-                            <h6 class="feature-title">Heading 1</h3>
+                    <div class="col-md-3 my-2">
+                        <div class="feature vertically-center">
+                            <div class="feature-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                            <div class="feature-details w-50 text-center pt-2">
+                                <h6 class="feature-title">Heading 1</h3>
+                            </div>
                         </div>
                     </div>
-                    <div class="feature vertically-center">
-                        <div class="feature-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                        <div class="feature-details w-50 text-center pt-2">
-                            <h6 class="feature-title">Heading 1</h3>
+                    <div class="col-md-3 my-2">
+                        <div class="feature vertically-center">
+                            <div class="feature-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                            <div class="feature-details w-50 text-center pt-2">
+                                <h6 class="feature-title">Heading 1</h3>
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>  
@@ -184,14 +206,11 @@
                                 Fuga incidunt rem, architecto error ea, beatae est ducimus 
                                 nulla quod ad facilis repellendus aperiam delectus magnam 
                                 laudantium perferendis in ipsum! Dolorem?</p>
-                                <div class="steps py-2">
-                                    <div class="row">
-                                        <div class="cell">
-                                            
-                                        </div>
-                                    </div>
+                                <div class="recommend-button vertically-center my-4">
+                                    <a href="" class="btn btn-yellow btn-animate ">Recommend a product</a>
                                 </div>
                             </div>
+                            
                         </div>
                         <div class="col-md-6">
                             <img src="/assets/img/How we works.jpg" class="img-fluid" alt="">
@@ -509,8 +528,8 @@
             </div>
         </div>
     </div>
-    <div class="toogle-background py-5 bg-light">
-        <div class="container py-4">
+    <div class="toggle-background py-5 ">
+        <div class="container py-5">
             <div class="row">
                 <div class="col">
                     <div class="numbering-counter vertically-center">
@@ -841,7 +860,7 @@
             </div>
         </div>
     </div>
-    <div class="toogle-background py-5 bg-light">
+    <div class="toggle-background py-5 ">
         <div class="container py-4">
             <div class="row">
                 
@@ -852,7 +871,7 @@
                 <div class="col">
                     <form action="#" class="contact100-form validate-form w-100" autocomplete="off">
                         <span class="contact100-form-title text-center">
-                            <h1>Get in touch</h1>
+                            <h1>Get in Touch</h1>
                         </span>
     
                         <div class="wrap-input100 validate-input" data-validate = "Name is required">
@@ -877,7 +896,7 @@
                         </div>
     
                         <div class="container-contact100-form-btn">
-                            <button class="contact100-form-btn">
+                            <button class="contact100-form-btn btn-yellow">
                                 Send
                             </button>
                         </div>
@@ -891,29 +910,33 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="#">Web design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Hosting</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 item text">
+                    <div class="col-md-4 item text">
                         <h3>Company Name</h3>
-                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                        <p class="text-justify"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, blanditiis hic! Eos vero nemo culpa quae voluptatem corrupti fugiat neque deserunt autem commodi repellat, illum repellendus quidem officia repudiandae quis?</p>
+                        <div class="item social pt-5"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
                     </div>
-                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+
+                    <div class="col-sm-6 col-md-3 item text-center">
+                        <h3>Quick Links</h3>
+                        <ul class="">
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Laptops</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Recommend Product</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-5 item item-map">
+                        <div style="width: 100%">
+                            <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=+(University%20of%20the%20Punjab,%20jhelum%20campus)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                            </iframe>
+                        </div>
+                    </div>
+                    
                 </div>
-                <p class="copyright">Company Name © 2018</p>
+                <p class="copyright">WEBBUY © 2022</p>
             </div>
         </footer>
     </div>
