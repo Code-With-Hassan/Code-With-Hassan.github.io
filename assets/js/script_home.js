@@ -49,7 +49,6 @@ function dismiss_Preloader() {
     $(".preloader").css('display','none');
    }, 1000);
 }
-
 $(document).ready(function() {
   var navTrigger = document.getElementsByClassName('nav-trigger')[0],
     body = document.getElementsByTagName('body')[0];
@@ -98,10 +97,8 @@ function toggleNavigation(event) {
           }
       }
   }
-
   function showValidate(input) {
       var thisAlert = $(input).parent();
-
       $(thisAlert).addClass('alert-validate');
   }
 
