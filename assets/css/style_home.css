@@ -1160,5 +1160,193 @@ iframe {
     }
 }
 
-
   
+  .product-container .product-card{
+	position: relative;
+	width: 100%;
+	height: 450px;
+	background: #232323;
+	border-radius: 20px;
+	overflow: hidden;
+  }
+  
+  .product-container .product-card:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--secondary-clr);
+	clip-path: circle(150px at 80% 20%);
+	transition: 0.5s ease-in-out;
+  }
+  
+  .product-container .product-card:hover:before{
+	clip-path: circle(300px at 80% -20%);
+  }
+  
+  .product-container .product-card:after{
+	content: '';
+	position: absolute;
+	top: 30%;
+	left: -20%;
+	font-size: 12em;
+	font-weight: 800;
+	font-style: italic;
+	color: rgba(255,255,25,0.05)
+  }
+  
+  .product-container .product-card .imgBx{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+	width: 100%;
+	height: 220px;
+	transition: 0.5s;
+  }
+  
+  .product-container .product-card:hover .imgBx{
+	top: 0%;
+	transform: translateY(0%);
+  }
+  
+  .product-container .product-card .imgBx img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 270px;
+  }
+  
+  .product-container .product-card .contentBx{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	transition: 1s;
+	z-index: 1;
+  }
+  
+  .product-container .product-card:hover .contentBx{
+	height: 210px;
+  }
+  
+  .product-container .product-card .contentBx h2{
+	position: relative;
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 1.7em;
+	color: #fff;
+	margin: 0;
+  }
+  
+  .product-container .product-card .contentBx .size, .product-container .product-card .contentBx .color {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 8px 20px;
+	transition: 0.5s;opacity: 0;
+	visibility: hidden;
+	padding-top: 0;
+	padding-bottom: 0;
+  }
+  
+  .product-container .product-card:hover .contentBx .size{
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 0.5s;
+  }
+  
+  .product-container .product-card:hover .contentBx .color{
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 0.6s;
+  }
+  
+  .product-container .product-card .contentBx .size h3, .product-container .product-card .contentBx .color h3{
+	color: #fff;
+	font-weight: 300;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-right: 10px;
+  }
+  
+  .product-container .product-card .contentBx .size span{
+	width: 26px;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	font-size: 14px;
+	display: inline-block;
+	color: #111;
+	background: #fff;
+	margin: 0 5px;
+	transition: 0.5s;
+	color: #111;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  .product-container .product-card .contentBx .size span:hover{
+	background: #9bdc28;
+  }
+  
+  .product-container .product-card .contentBx .color span{
+	width: 20px;
+	height: 20px;
+	background: #ff0;
+	border-radius: 50%;
+	margin: 0 5px;
+	cursor: pointer;
+  }
+  
+  .product-container .product-card .contentBx .color span:nth-child(2){
+	background: #9bdc28;
+  }
+  
+  .product-container .product-card .contentBx .color span:nth-child(3){
+	background: #03a9f4;
+  }
+  
+  .product-container .product-card .contentBx .color span:nth-child(4){
+	background: #e91e63;
+  }
+  
+  .product-container .product-card .contentBx a{
+	display: inline-block;
+	padding: 10px 20px;
+	background: #fff;
+	border-radius: 4px;
+	margin-top: 10px;
+	text-decoration: none;
+	font-weight: 600;
+	color: #111;
+	opacity: 0;
+	transform: translateY(50px);
+	transition: 0.5s;
+	margin-top: 0;
+  }
+  
+  .container .product-card:hover .contentBx a{
+	opacity: 1;
+	transform: translateY(0px);
+	transition-delay: 0.75s;
+	
+  }
+  .page-item .page-link{
+	  color: #fff !important;
+	  background-color: var(--primary-bg) ;
+  }
+  .page-item.active .page-link{
+	color: #fff !important;
+	background-color: var(--secondary-clr) !important;
+	border: 1px solid var(--secondary-clr);
+}
+.page-item .page-link:hover{
+	color: #fff !important;
+	background-color: var(--secondary-clr) ;
+}
