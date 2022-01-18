@@ -21,6 +21,17 @@ header.header{
 	background-size: cover;
 	position: relative;
 }
+header.header-sec{
+	height: 30vh;
+	background-image: url("/assets/img/header\ laptops.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 150%;
+}
+.overlay-sec{
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 30vh;
+}
 .overlay{
 	background: rgba(0, 0, 0, 0.5);
 	width: 100%;
@@ -33,7 +44,7 @@ header.header{
 	font-size: larger;
 }
 .btn-yellow{
-	background-color: var(--secondary-clr);
+	background-color: var(--secondary-clr) !important;
 	color: var(--txt-white);
 	outline: none;
 }
@@ -1164,7 +1175,7 @@ iframe {
   .product-container .product-card{
 	position: relative;
 	width: 100%;
-	height: 450px;
+	height: 400px;
 	background: #232323;
 	border-radius: 20px;
 	overflow: hidden;
@@ -1208,7 +1219,7 @@ iframe {
   }
   
   .product-container .product-card:hover .imgBx{
-	top: 0%;
+	top: 5%;
 	transform: translateY(0%);
   }
   
@@ -1231,7 +1242,7 @@ iframe {
   }
   
   .product-container .product-card:hover .contentBx{
-	height: 210px;
+	height: 170px;
   }
   
   .product-container .product-card .contentBx h2{
@@ -1247,11 +1258,10 @@ iframe {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 8px 20px;
-	transition: 0.5s;opacity: 0;
+	transition: 0.5s;
+	opacity: 0;
 	visibility: hidden;
-	padding-top: 0;
-	padding-bottom: 0;
+	padding: 0.3em 2em;
   }
   
   .product-container .product-card:hover .contentBx .size{
@@ -1358,11 +1368,31 @@ iframe {
 	padding: 1em;
 	border-radius: 3em;
 	background: rgba( 255, 255, 255, 0.15 );
-  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
-	backdrop-filter: blur( 2px );
+  	backdrop-filter: blur( 2px );
 	-webkit-backdrop-filter: blur( 2px );
 	border-radius: 10px;
 	border: 1px solid rgba( 255, 255, 255, 0.18 );
 	overflow: auto;
-	
 }
+.btn-outline-yellow{
+	background-color: transparent;
+	color: White;
+	border: 1px solid var(--secondary-clr);
+}
+.Results{
+	color: var(--txt-white);
+	background-color: var(--secondary-clr);
+	padding: 0.2em;
+	font-size: larger;
+	font-weight: 700;
+}
+.left-container{
+	background: linear-gradient(var(--secondary-clr), #ffbf00)
+}
+.right-container{
+	background-color: var(--txt-black);
+}
+.details-container{
+	padding: 1em;
+	background-color: red;
+	border-radius: 2em;
