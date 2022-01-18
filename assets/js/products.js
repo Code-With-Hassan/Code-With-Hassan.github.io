@@ -68,7 +68,7 @@ for (var i = 0; i < data.length; i++) {
     products +=     '<div class="product-container">';
     products +=         '<div class="product-card">';
     products +=             '<div class="imgBx">';
-    products +=                 '<img src="/assets/img/img.png">';
+    products +=                 '<img src="assets/img/img.png">';
     products +=             '</div>';
     products +=             '<div class="contentBx">';
     products +=                 '<h2>Nike Shoes</h2>';
