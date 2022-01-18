@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="assets/css/style_home.css">
+    <link rel="stylesheet" href="style_contactus.css">
+    
+</head>
+<body onload="dismiss_Preloader()">
+    <nav class="nav-container" id="navigation">
+        <header>
+            <button type="button" class="close" aria-label="Close" onclick="closeOffcanvas()">
+                <span aria-hidden="true" >&times;</span>
+            </button>
+          <h2>Navigation</h2>
+        </header>
+      
+        <ul class="nav">
+          <li><a href="#0">About</a></li>
+          <li><a href="#0">Services</a></li>
+          <li><a href="#0">Portfolio</a></li>
+          <li><a href="#0">Clients</a></li>
+          <li><a href="#0">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="preloader">
+        <div id="particles-js"></div>
+        <div class="wrapper">
+            <div class="circle">W</div>
+            <div class="circle">e</div>
+            <div class="circle">b</div>
+            <div class="circle">B</div>
+            <div class="circle">u</div>
+            <div class="circle">y</div>
+            <div class="circle">!</div>            
+        </div>
+    </div>
+    <div class="top-header bg-dark text-light">
+        <div class="container">
+            <div class="row p-2">
+                <div class="col-md-8 w-100 h-100">
+                    <div id="all_news" >
+                        <ul class="news-ul">
+                            <li><a href="#">Macbook Air - 8GB/256GB</a></li>
+                            <li><a href="#">Macbook Pro - 4GB/256GB</a></li>
+                            <li><a href="#">Dell Aspire - 6GB/500GB</a></li>
+                            <li><a href="#">Acer Tilty - 16GB/1TB</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 text-right vertically-center py-1">
+                    <a href="#" class="top-header text-light-gray social-icon"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" class="top-header text-light-gray social-icon"><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
+                    <a href="#" class="top-header text-light-gray social-icon pr-4"><i class="fa fa-twitter" aria-hidden="true"></i></a>|
+                    <a href="#" class="top-header login-register text-light-gray px-3" > <i class="fa fa-user-o" aria-hidden="true"></i> Login or Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search-header bg-light">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8 p-4">
+                    <form method="post">
+                        <div class="input-group ">
+                            <input type="text" class="form-control search-bar" placeholder="Type your text here..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <button class="btn btn-primary btn-search-round" type="button">Search</button>
+                            </div>
+                            
+                          </div>
+                        <!-- <input type="text" name="search" class="form-control"> -->
+                    </form>
+                </div>
+                <button type="button" class="close" aria-label="Close" onclick="closesearch()">
+                    <span aria-hidden="true" >&times;</span>
+                </button>
+            </div>
+        </div>
+        <hr>
+    </div>
+    
+    <header class="header-sec">
+        <div class="overlay">
+          
+            <nav class="navbar navbar-expand-lg fixedElement py-3 justify-content-center d-flex">
+              
+            
+                <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold">My Shop</a>
+                    <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+                    
+                    <div id="navbarSupportedContent" class="collapse navbar-collapse w-100">
+                        <ul class="navbar-nav mr-auto ">
+                            <li class="nav-item active"><a href="#" class="nav-link text-uppercase ">Home <span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-uppercase ">Shop</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-uppercase ">Contact us</a></li>
+                            <li class="nav-item"><a href="aboutus.html" class="nav-link text-uppercase ">About us</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-uppercase ">Sale</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-uppercase ">Blogs</a></li>
+                            
+                        </ul>
+                        <ul class="navbar-nav ml-auto ">
+                            <li class="nav-item">
+                                <a href="javascript::void(0)" class="nav-link font-weight-bold" onclick="opensearch()">
+                                    <i class="fa fa-search" aria-hidden="true" style="font-size: 24px;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link text-uppercase font-weight-bold nav-trigger" >
+                                    <i class="fa" style="font-size:24px">&#xf07a;</i>
+                                    <span class='badge badge-warning' id='lblCartCount'> 5 </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container py-3">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-center vertically-center">
+                        <span class="text-light text-uppercase" style="font-size: 1.5em;">
+                            <span class="big">Contact Us</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="container container-1200">
+        <div class="row py-5">
+            <div class="col-lg-4 col-md-6 col-sm-12 pb-5">
+                <div class="contact-container">
+                  <span class="text-light text-uppercase" style="font-size: 1.5em;">
+                    <span class="big">
+                      <i class="fa-solid fa-mobile-screen-button"></i><br /> PHONE </span><br /> +92 1346789<br/> 
+                
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 pb-5">
+                <div class="contact-container">
+                  <span class="text-light text-uppercase" style="font-size: 1.5em;">
+                    <span class="big"> <i class="fa-solid fa-location-dot"></i><br />ADDRESS
+                </span> <br />Punjab University Jhelum campus <br/> 
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 pb-5">
+                <div class="contact-container">
+                  <span class="text-light text-uppercase" style="font-size: 1.5em;">
+                    <span class="big"><i class="fa-regular fa-envelope"></i></br> EMAIL
+
+                    </span> <br />mahrukhamjadmalik@gmail.com <br/> 
+                
+                  </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                    <span class="text-light text-uppercase" style="font-size: 0.7em;">
+                      If YOU got any questions <br />please do not hesitate to send us a message <br/> 
+                  </div>
+              </div>
+          </div>
+            <div class="container py-4">
+              <div class="row">
+                  
+                      <div class="col js-tilt vertically-center" data-tilt>
+                          <img src="assets/img/edit img-01.png" class="m-auto" alt="IMG">
+                      </div>
+                  
+                  <div class="col">
+                      <form action="#" class="contact100-form validate-form w-100" autocomplete="off">
+                          <span class="contact100-form-title text-center">
+                              <h1 class="text-light">Get in Touch</h1>
+                          </span>
+      
+                          <div class="wrap-input100 validate-input" data-validate = "Name is required">
+                              <input class="input100" type="text" name="name" placeholder="Name">
+                              <span class="focus-input100"></span>
+                              <span class="symbol-input100">
+                                  <i class="fa fa-user" aria-hidden="true"></i>
+                              </span>
+                          </div>
+      
+                          <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                              <input class="input100" type="text" name="email" placeholder="Email">
+                              <span class="focus-input100"></span>
+                              <span class="symbol-input100">
+                                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                              </span>
+                          </div>
+      
+                          <div class="wrap-input100 validate-input" data-validate = "Message is required">
+                              <textarea class="input100" name="message" placeholder="Message"></textarea>
+                              <span class="focus-input100"></span>
+                          </div>
+      
+                          <div class="container-contact100-form-btn">
+                              <button class="contact100-form-btn btn-yellow">
+                                  Send
+                              </button>
+                          </div>
+                      </form>
+                  </div>
+  
+              </div>
+          </div>
+            
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+
+                    </div>
+                </div>
+            </div>
+        </div>  
+        
+    </div>
+    
+    
+
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 item text">
+                        <h3>Company Name</h3>
+                        <p class="text-justify"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, blanditiis hic! Eos vero nemo culpa quae voluptatem corrupti fugiat neque deserunt autem commodi repellat, illum repellendus quidem officia repudiandae quis?</p>
+                        <div class="item social pt-5"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 item text-center">
+                        <h3>Quick Links</h3>
+                        <ul class="">
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Laptops</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Recommend Product</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-5 item item-map">
+                        <div style="width: 100%">
+                            <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=+(University%20of%20the%20Punjab,%20jhelum%20campus)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                            </iframe>
+                        </div>
+                    </div>
+                    
+                </div>
+                <p class="copyright">WEBBUY © 2022</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/js/script_home.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/tilt.jquery.min.js"></script>
+</body>
+</html>
