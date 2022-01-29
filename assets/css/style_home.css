@@ -1524,9 +1524,10 @@ iframe {
 	text-align: center;
 	position: relative;
 	z-index: 100;
+	color: var(--secondary-clr);
 	
   }
-  .text-heading-aboutus::after{
+  /* .text-heading-aboutus::after{
 	  position: absolute;
 	  bottom: 0;
 	  left: 0;
@@ -1535,7 +1536,7 @@ iframe {
 	  height: 0.3em;
 	  width: 100%;
 	  background-color: #ffc000;
-  }
+  } */
 
 
 
