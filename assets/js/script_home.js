@@ -62,7 +62,7 @@ function closeOffcanvas() {
 function dismiss_Preloader() {
   // setTimeout(() => {  
   //   $(".preloader").css('display','none');
-  //  }, 1000);
+  //  }, 10);
    $(".preloader").css('display','none');
 }
 $(document).ready(function() {

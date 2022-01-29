@@ -12,6 +12,8 @@
 body{
     background-color: var(--primary-bg);
 	color: var(--txt-white);
+	font-family: 'Itim', cursive;
+	font-size: medium;
 }
 header.header{
     height: 80vh;
@@ -39,6 +41,8 @@ header.header-sec{
 }
 .big{
 	font-family: 'Dancing Script', cursive;
+	font-family: 'Neonderthaw', cursive;
+	font-family: 'Pacifico', cursive;
 	color: var(--secondary-clr);
 	font-weight: 700;
 	font-size: larger;
@@ -1525,21 +1529,86 @@ iframe {
 	position: relative;
 	z-index: 100;
 	color: var(--secondary-clr);
-	
   }
-  /* .text-heading-aboutus::after{
-	  position: absolute;
-	  bottom: 0;
-	  left: 0;
-	  z-index: -1;
-	  content: '';
-	  height: 0.3em;
-	  width: 100%;
-	  background-color: #ffc000;
-  } */
 
-
-
+.aboutus-img{
+	background: url("/assets/img/How\ we\ works.jpg") no-repeat;
+	background-size: 100% 100%;
+	min-height: 40vh;
+	width: 90%;
+	min-width: 80%;
+	/* animation: animate-img-1 10s infinite; */
+	box-shadow: 
+		var(--secondary-clr) 10px 10px 2px 1px,
+		var(--txt-black) 30px 30px ;
+	border: 1px solid white;
+}
+.aboutus-img:nth-child(1)
+{
+	animation: animate-img-1 10s infinite;
+}
+.aboutus-img:nth-child(2)
+{
+	animation: animate-img-2 20s infinite;
+}
+.aboutus-img:nth-child(3)
+{
+	animation: animate-img-2 30s infinite;
+}
+@keyframes animate-img-1{
+	0%{
+		background: url("/assets/img/How\ we\ works.jpg") no-repeat;
+		background-size: 100% 100%;
+	}
+	25%{
+		background: url("/assets/img/img.png") no-repeat;
+		background-size: 100% 100%;
+	}
+	50%{
+		background: url("/assets/img/header\ laptops.jpg") no-repeat;
+		background-size: 100% 100%;
+	}
+	75%{
+		background: url("/assets/img/edit\ img-01.png")  no-repeat;
+		background-size: 100% 100%;
+	}
+}
+@keyframes animate-img-2{
+	0%{
+		background: url("/assets/img/How\ we\ works.jpg") no-repeat;
+		background-size: 100% 100%;
+	}
+	25%{
+		background: url("/assets/img/img.png") no-repeat;
+		background-size: 100% 100%;
+	}
+	50%{
+		background: url("/assets/img/header\ laptops.jpg") no-repeat;
+		background-size: 100% 100%;
+	}
+	75%{
+		background: url("/assets/img/edit\ img-01.png")  no-repeat;
+		background-size: 100% 100%;
+	}
+}
+@keyframes animate-img-3{
+	0%{
+		background: url("/assets/img/How\ we\ works.jpg") no-repeat;
+		background-size: 100% 100%;
+	}
+	25%{
+		background: url("/assets/img/img.png") no-repeat;
+		background-size: 100% 100%;
+	}
+	50%{
+		background: url("/assets/img/header\ laptops.jpg") no-repeat;
+		background-size: 100% 100%;
+	}
+	75%{
+		background: url("/assets/img/edit\ img-01.png")  no-repeat;
+		background-size: 100% 100%;
+	}
+}
 
   li {
 	list-style: none;
