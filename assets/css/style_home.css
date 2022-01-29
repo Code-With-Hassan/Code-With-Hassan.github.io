@@ -1482,3 +1482,20 @@ iframe {
 	overflow: auto;
 	
   }
+  .hero-title-aboutus{
+	position: relative;
+	padding-bottom: 1em;
+	letter-spacing: 3px;
+	font-weight: 800;
+}
+.hero-title-aboutus::before{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	content: '';
+	background-color: var(--secondary-clr);
+	height: 15px;
+	width: 20%;
+	border-radius: 30px;
+}
