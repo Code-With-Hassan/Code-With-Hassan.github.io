@@ -1548,9 +1548,9 @@ iframe {
   /* style member component */
   .list-members {
 	background: var(--secondary-clr);
-	width: 80%;
-	margin: 4% auto;
+	width: 70%;
 	display: flex;
+	margin: auto;
 	flex-wrap: wrap;
   }
   
@@ -1573,10 +1573,14 @@ iframe {
 	width: 100%;
 	height: 100%;
 	transition: 1s;
+	filter: blur(0);
+	filter: grayscale(1);
   }
   
   .member-image:hover img {
-	transform: scale(1.1);
+	transform: scale(1.3);
+	filter: contrast(0.9);
+	filter: grayscale(0);
   }
   
   .member-info {
@@ -1587,8 +1591,7 @@ iframe {
   .member-info p {
 	margin: 20px 0;
   }
-  
-  
+
   /* style social link */
   .social-link .fab {
 	width: 35px;
