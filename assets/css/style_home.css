@@ -1499,3 +1499,40 @@ iframe {
 	width: 20%;
 	border-radius: 30px;
 }
+.box-glass{
+	background: rgba(255, 255, 255, 0.1);
+	  padding: 1em;
+	  border-radius: 3em;
+	  background: rgba( 255, 255, 255, 0.1 );
+	/* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+	backdrop-filter: blur( 2px );
+	-webkit-backdrop-filter: blur( 2px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+	overflow: auto;
+}
+.aboutus-desc-img img{
+	box-shadow: 
+	var(--secondary-clr) 10px 10px 2px 1px,
+	var(--txt-black) 30px 30px 
+	;
+}
+.text-heading-aboutus {
+	font-weight: 600;
+	text-transform: uppercase;
+	width: fit-content;	
+	text-align: center;
+	position: relative;
+	z-index: 100;
+	
+  }
+  .text-heading-aboutus::after{
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  z-index: -1;
+	  content: '';
+	  height: 0.3em;
+	  width: 100%;
+	  background-color: #ffc000;
+  }
