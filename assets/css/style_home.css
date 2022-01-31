@@ -1542,7 +1542,7 @@ iframe {
   }
 
 .aboutus-img{
-	background: url("/assets/img/How\ we\ works.jpg") no-repeat;
+	background: url("/assets/img/Cool.jpg") no-repeat;
 	background-size: 100% 100%;
 	min-height: 40vh;
 	width: 90%;
@@ -1567,55 +1567,55 @@ iframe {
 }
 @keyframes animate-img-1{
 	0%{
-		background: url("/assets/img/How\ we\ works.jpg") no-repeat;
+		background: url("/assets/img/new.jpeg ") no-repeat;
 		background-size: 100% 100%;
 	}
 	25%{
-		background: url("/assets/img/img.png") no-repeat;
+		background: url("/assets/img/White.jpg") no-repeat;
 		background-size: 100% 100%;
 	}
 	50%{
-		background: url("/assets/img/header\ laptops.jpg") no-repeat;
+		background: url("/assets/img/discuss.jpg") no-repeat;
 		background-size: 100% 100%;
 	}
 	75%{
-		background: url("/assets/img/edit\ img-01.png")  no-repeat;
+		background: url("/assets/img/Cool.jpg")  no-repeat;
 		background-size: 100% 100%;
 	}
 }
 @keyframes animate-img-2{
 	0%{
-		background: url("/assets/img/How\ we\ works.jpg") no-repeat;
+		background: url("/assets/img/new.jpeg") no-repeat;
 		background-size: 100% 100%;
 	}
 	25%{
-		background: url("/assets/img/img.png") no-repeat;
+		background: url("/assets/img/White.jpg") no-repeat;
 		background-size: 100% 100%;
 	}
 	50%{
-		background: url("/assets/img/header\ laptops.jpg") no-repeat;
+		background: url("/assets/img/discuss.jpg") no-repeat;
 		background-size: 100% 100%;
 	}
 	75%{
-		background: url("/assets/img/edit\ img-01.png")  no-repeat;
+		background: url("/assets/img/Cool.jpg")  no-repeat;
 		background-size: 100% 100%;
 	}
 }
 @keyframes animate-img-3{
 	0%{
-		background: url("/assets/img/How\ we\ works.jpg") no-repeat;
+		background: url("/assets/img/new.jpeg") no-repeat;
 		background-size: 100% 100%;
 	}
 	25%{
-		background: url("/assets/img/img.png") no-repeat;
+		background: url("/assets/img/White.jpg") no-repeat;
 		background-size: 100% 100%;
 	}
 	50%{
-		background: url("/assets/img/header\ laptops.jpg") no-repeat;
+		background: url("/assets/img/discuss.jpg") no-repeat;
 		background-size: 100% 100%;
 	}
 	75%{
-		background: url("/assets/img/edit\ img-01.png")  no-repeat;
+		background: url("/assets/img/Cool.jpg")  no-repeat;
 		background-size: 100% 100%;
 	}
 }
