@@ -144,10 +144,10 @@ header.header-about_us{
     flex-grow: 1;
     flex-direction: column;
 }
-.feature i{
+.feature svg{
     background-color: var(--secondary-clr);
     border-radius: 50%;
-    padding: 1.5em;
+    padding: 0.5em;
 }
 @media (max-width: 800px) {
     .floating-box{
@@ -1867,3 +1867,12 @@ iframe {
   .social-button--npmjs::after {
 	background: #c12127;
   }
+.reveal{
+	transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.active-reveal{
+	transform: translateY(0);
+	opacity: 1;
+}
