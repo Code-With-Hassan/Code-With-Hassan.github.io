@@ -18,21 +18,31 @@ body{
 header.header{
     height: 80vh;
     background-color: var(--secondary-clr);
-	background-image: url("/assets/img/header\ laptops.jpg");
+	background-image: url("/assets/img/pexels-vlada-karpovich-4050467\ \(1\).jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 	position: relative;
 }
 header.header-sec{
-	height: 30vh;
-	background-image: url("/assets/img/header\ laptops.jpg");
+	height: 40vh;
+	/* background-image: url("/assets/img/header\ laptops.jpg"); */
 	background-repeat: no-repeat;
-	background-size: 100% 150%;
+	background-size: contain;
+	background-size: 100% 100%;
+}
+header.header-contact_us{
+	background-image: url("/assets/img/pexels-media-4050289.jpeg");
+	background-size: 100% 100%;
+
+}
+header.header-about_us{
+	background-image: url("/assets/img/pexels-fauxels-3182834.jpg");
+	background-size: 100% 100%;
 }
 .overlay-sec{
 	background: rgba(0, 0, 0, 0.5);
 	width: 100%;
-	height: 30vh;
+	height: 40vh;
 }
 .overlay{
 	background: rgba(0, 0, 0, 0.5);
@@ -167,7 +177,7 @@ header.header-sec{
     box-shadow: 0px 6px 13px 2px rgba(0,0,0,0.55);
     -webkit-box-shadow: 0px 6px 13px 2px rgba(0,0,0,0.55);
     -moz-box-shadow: 0px 6px 13px 2px rgba(0,0,0,0.55);
-}
+}.overlay-sec
 .box img{
 	border: 2px solid white;
 	box-shadow: 
@@ -1741,4 +1751,119 @@ iframe {
 	  right: auto;
 	  transform: translateY(-50%) rotateZ(180deg);
 	}
+  }
+/* social buttons in contact us page */
+
+  .social-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: -10px;
+  }
+  .social-buttons__button {
+	margin: 10px 5px 0;
+  }
+  .social-button {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline: none;
+	width: 70px;
+	height: 70px;
+	text-decoration: none;
+	border-radius: 100%;
+	background: #fff;
+	text-align: center;
+  }
+  .social-button::after {
+	content: '';
+	position: absolute;
+	top: -1px;
+	left: 50%;
+	display: block;
+	width: 0;
+	height: 0;
+	border-radius: 100%;
+	transition: 0.3s;
+  }
+  .social-button:focus, .social-button:hover {
+	color: #fff;
+  }
+  .social-button:focus::after, .social-button:hover::after {
+	width: calc(100% + 2px);
+	height: calc(100% + 2px);
+	margin-left: calc(-50% - 1px);
+  }
+  .social-button i, .social-button svg {
+	position: relative;
+	z-index: 1;
+	transition: 0.3s;
+  }
+  .social-button i {
+	font-size: 28px;
+  }
+  .social-button svg {
+	height: 40%;
+	width: 40%;
+  }
+  .social-button--mail {
+	color: #0072c6;
+  }
+  .social-button--mail::after {
+	background: #0072c6;
+  }
+  .social-button--facebook {
+	color: #3b5999;
+  }
+  .social-button--facebook::after {
+	background: #3b5999;
+  }
+  .social-button--linkedin {
+	color: #0077b5;
+  }
+  .social-button--linkedin::after {
+	background: #0077b5;
+  }
+  .social-button--github {
+	color: #6e5494;
+  }
+  .social-button--github::after {
+	background: #6e5494;
+  }
+  .social-button--codepen {
+	color: #212121;
+  }
+  .social-button--codepen::after {
+	background: #212121;
+  }
+  .social-button--steam {
+	color: #7da10e;
+  }
+  .social-button--steam::after {
+	background: #7da10e;
+  }
+  .social-button--snapchat {
+	color: #eec900;
+  }
+  .social-button--snapchat::after {
+	background: #eec900;
+  }
+  .social-button--twitter {
+	color: #55acee;
+  }
+  .social-button--twitter::after {
+	background: #55acee;
+  }
+  .social-button--instagram {
+	color: #e4405f;
+  }
+  .social-button--instagram::after {
+	background: #e4405f;
+  }
+  .social-button--npmjs {
+	color: #c12127;
+  }
+  .social-button--npmjs::after {
+	background: #c12127;
   }
