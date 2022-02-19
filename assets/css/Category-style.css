@@ -5,6 +5,19 @@
 body{
     overflow: hidden
 }
+.greeting-section{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+}
+.greeting-section h1{
+    color: white;
+}
+.greeting-section p{
+    color: white;
+}
 .side{
     min-width: 10vw;
     width: 50%;
@@ -14,8 +27,10 @@ body{
 .side-one{
     
     box-shadow: inset #630000 13px 13px 220px 2px;
-    background: linear-gradient(#f33f3f, #630000);
+    
+    background: linear-gradient(rgb(161,66,60), rgb(161,66,60));
     position: relative;
+
 }
 .side-one::before{
     position: absolute;
